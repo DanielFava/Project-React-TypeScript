@@ -1,14 +1,14 @@
-import "../styles/home.scss";
+import "../../styles/auth.scss";
 
-import ProjectImg from "../assets/images/logo.svg";
-import illustrationImg from "../assets/images/illustration.svg";
+import ProjectImg from "../../assets/images/logo.svg";
+import illustrationImg from "../../assets/images/illustration.svg";
 
 import { Link, useHistory } from "react-router-dom";
 import { FormEvent, useState } from "react";
 
-import { Button } from "../components/Button";
-import { useAuth } from "../hooks/useAuth";
-import { database } from "../services/firabase";
+import { Button } from "../../components/Button";
+import { useAuth } from "../../hooks/useAuth";
+import { database } from "../../services/firabase";
 
 export function NewRoom() {
   const { user } = useAuth();
