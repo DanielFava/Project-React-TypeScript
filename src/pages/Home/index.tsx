@@ -43,6 +43,10 @@ export function Home() {
       return;
     }
 
+    if (roomRef.val().userId === user?.id) {
+      return history.push(`/admin/rooms/${roomCode}`);
+    }
+
     history.push(`/rooms/${roomCode}`);
   }
 
